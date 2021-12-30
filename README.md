@@ -29,8 +29,6 @@ Cleaned 747 rows and 68 columns:
 ## Exploratory Data Analysis
 Examined the relationships between the independent and dependent variables.
 
-![Alt text](https://github.com/chelseako/House_Pricing_Project/blob/main/Sold_Original_Scatter.png)
-
 ![Alt text](https://github.com/chelseako/House_Pricing_Project/blob/main/housesCorrplot.png)
 
 ## Model Building
