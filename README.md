@@ -26,6 +26,13 @@ Cleaned 747 rows and 68 columns:
 * Parsed number of parking stalls and filled missing values with the median value (2)
 * Parsed number of stories and filled missing values with the median value (2)
 
+## Exploratory Data Analysis
+Examined the relationships between the independent and dependent variables.
+
+![Alt text](https://github.com/chelseako/House_Pricing_Project/blob/main/Sold_Original_Scatter.png)
+
+![Alt text](https://github.com/chelseako/House_Pricing_Project/blob/main/housesCorrplot.png)
+
 ## Model Building
 I split the data into training and testing sets with a test size of 20%.
 I tried five different models:
