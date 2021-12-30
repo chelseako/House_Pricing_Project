@@ -1,12 +1,11 @@
 # Honolulu Housing Price Prediction Project Overview
-* Created a model that estimates sold prices for Honolulu houses (RMSE ~ $87,000) to help home buyers estimate a competitive bid offer in R.
+* Created a model that estimates sold prices for Honolulu houses (RMSE ~ $87,000) to help home buyers estimate a competitive bid offer.
 * Custom built a web scraper using Python and Selenium for a local real estate website.
 * Cleaned 700+ observations of Honolulu houses sold within the past year using Python (Pandas, Numpy) and R.
 * Optimized Linear, Ridge, Lasso, and Elastic Net Regressors to identify model with best predictive validity.
 
 ## Code and Resources Used
 **Packages:** pandas, numpy, selenium, re, datetime, csv, leaps, glmnet, corrplot
-
 **Scraper Github:** https://github.com/PlayingNumbers/ds_salary_proj/blob/master/glassdoor_scraper.py
 
 ## Web Scraping
@@ -20,7 +19,7 @@ The website allowed search parameters and displayed a table that could be downlo
 ## Data Cleaning
 Cleaned 747 rows and 68 columns:
 * Removed index/irrelevant columns
-* Examined outliers and manually corrected erroneously entered values
+* Examined outliers and manually corrected erroneously entered values, removed irrelevant outliers (e.g., land only)
 * Created binary variables of CPR, remodeled within 5 years, pool, view, easements, level topography, basement, split level
 * Parsed bath variable to create full and half bath columns
 * Converted house condition into ordinal variable, took average value when more than one condition was provided
