@@ -6,24 +6,26 @@
 
 ## Code and Resources Used
 **Packages:** pandas, numpy, selenium, re, datetime, csv, leaps, glmnet, corrplot
+
 **Scraper Github:** https://github.com/PlayingNumbers/ds_salary_proj/blob/master/glassdoor_scraper.py
 
 ## Web Scraping
 Created a scraper than scrapes listings from the similar listings page (maximum of 100 per page), then clicks on last listing to find new similar listings page. Scraper identifies if new listing was already collected, in the correct region, and sold within given parameter (e.g., last 12 months).
 
-## Data Cleaning
-Used file downloaded directly from website of data obtained with search parameters:
+The website allowed search parameters and displayed a table that could be downloaded directly as an Excel file. I used this excel file for time efficiency. To decrease variance and improve predictive validity, I used the following search parameters:
 * Sold within past year
 * Minimum sold price = $800,000
 * Maximum sold price = $1,500,000
 
-Returned 747 rows and cleaned data by:
-* Creating binary variables of CPR, remodeled within 5 years, pool, view, easements, level topography, basement, split level
-* Parsing bath variable to create full and half bath columns
-* Coverted house condition into ordinal variable, taking average value when more than one condition provided
+## Data Cleaning
+Cleaned 747 rows and 68 columns:
+* Removed index/irrelevant columns
+* Examined outliers and manually corrected erroneously entered values
+* Created binary variables of CPR, remodeled within 5 years, pool, view, easements, level topography, basement, split level
+* Parsed bath variable to create full and half bath columns
+* Converted house condition into ordinal variable, took average value when more than one condition was provided
 * Parsed number of parking stalls and filled missing values with the median value (2)
 * Parsed number of stories and filled missing values with the median value (2)
-* Identified and corrected outliers for independent variables (original price, assessed total, living sq. ft., land sq. ft.)
 
 ## Model Building
 I split the data into training and testing sets with a test size of 20%.
