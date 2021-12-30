@@ -28,25 +28,22 @@ Returned 747 rows and cleaned data by:
 ## Model Building
 I split the data into training and testing sets with a test size of 20%.
 I tried five different models:
-* **Original Least Squared Regression** - Baseline for the model
-* **Automatic Model** - To reduce dimensionality and improve predictive validity
+* **Original Least Squares (OLS) Regression** - Baseline for the model
+* **Regsubsets OLS** - To reduce dimensionality and improve predictive validity
 * **Ridge** - To reduce variance and improve predictive validity
 * **Lasso** - To reduce dimensionality and improve predictive validity
 * **Elastic Net** - To examine the mix of Ridge and Lasso
 
 ## Model Performance
-The Automatic Model builder had the lowest root mean squared error (RMSE) on the test set.
-Using the "adjr2", 'Cp", and "bic" scales, the automatic model builder consistently selected:
+The OLS model built using the regsubsets automatic model selection function had the lowest root mean squared error (RMSE) on the test set. The regsubsets function, using the "adjr2", "Cp", and "bic" scales, consistently selected the following four variables:
 * Original Price
 * FloodZone
 * Assessed Total
 * Number of Photos
 
-The RMSE for each model are as follows:
-* **Automatic Model:** 86,925
+The RMSEs for each model are as follows:
+* **Regsubsets OLS:** 86,925
 * **Ridge:** 106,907
 * **Lasso:** 92,717
 * **Elastic Net:** 93,585
-
-
 
