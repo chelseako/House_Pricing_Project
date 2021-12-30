@@ -1,6 +1,7 @@
 # Honolulu Housing Price Prediction Project Overview
 * Created a model that estimates sold prices for Honolulu houses (RMSE ~ $87,000) to help home buyers estimate a competitive bid offer.
 * Custom built a web scraper using Python and Selenium for a local real estate website.
+* Used only predictor variables that can be identified at time of listing.
 * Cleaned 700+ observations of Honolulu houses sold within the past year using Python (Pandas, Numpy) and R.
 * Optimized Linear, Ridge, Lasso, and Elastic Net Regressors to identify model with best predictive validity.
 
@@ -46,7 +47,7 @@ I tried five different models:
 ## Model Performance
 The OLS model built using the regsubsets automatic model selection function had the lowest root mean squared error (RMSE) on the test set. The regsubsets function, using the "adjr2", "Cp", and "bic" scales, consistently selected the following four variables:
 * Original Price
-* FloodZone
+* Flood Zone
 * Assessed Total
 * Number of Photos
 
