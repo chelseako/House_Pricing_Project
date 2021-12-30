@@ -6,6 +6,7 @@
 
 ## Code and Resources Used
 **Packages:** pandas, numpy, selenium, re, datetime, csv, leaps, glmnet, corrplot
+
 **Scraper Github:** https://github.com/PlayingNumbers/ds_salary_proj/blob/master/glassdoor_scraper.py
 
 ## Web Scraping
