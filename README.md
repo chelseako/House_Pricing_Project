@@ -38,7 +38,7 @@ Examined the relationships between the independent and dependent variables.
 ## Model Building
 I split the data into training and testing sets with a test size of 20%.
 I tried five different models:
-* **Original Least Squares (OLS) Regression** - Baseline for the model
+* **Ordinary Least Squares (OLS) Regression** - Baseline for the model
 * **Regsubsets OLS** - To reduce dimensionality and improve predictive validity
 * **Ridge** - To reduce variance and improve predictive validity
 * **Lasso** - To reduce dimensionality and improve predictive validity
