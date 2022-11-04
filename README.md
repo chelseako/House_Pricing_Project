@@ -1,5 +1,3 @@
-### [Back to Chelsea Ko's Portfolio](https://chelseako.github.io/Portfolio/)
-
 # Honolulu Housing Price Prediction Project Overview
 * Created a model that estimates sold prices for Honolulu houses (RMSE ~ $87,000) to help home buyers estimate a competitive bid offer.
 * Custom built a web scraper using Python and Selenium for a local real estate website.
@@ -59,4 +57,7 @@ The RMSEs for each model are as follows:
 * **Lasso:** 92,717
 * **Elastic Net:** 93,585
 
+### [Link to Project GitHub Repository](https://github.com/chelseako/House_Pricing_Project)
+
 ### [Back to Chelsea Ko's Portfolio](https://chelseako.github.io/Portfolio/)
+
