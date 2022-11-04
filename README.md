@@ -1,4 +1,5 @@
-![Profile picture](/images/ko2.png) # Chelsea Ko's Data Science Portfolio
+![Profile picture](/images/ko2.png) 
+# Chelsea Ko's Data Science Portfolio
 
 # Honolulu Housing Price Prediction Project Overview
 * Created a model that estimates sold prices for Honolulu houses (RMSE ~ $87,000) to help home buyers estimate a competitive bid offer.
