@@ -33,9 +33,9 @@ Cleaned 747 rows and 68 columns:
 ## Exploratory Data Analysis
 Examined the relationships between the independent and dependent variables.
 
-![Scatterplot of Sold versus Original Price](https://github.com/chelseako/House_Pricing_Project/blob/main/scatter_sold_orig.png)
+![Scatterplot of Sold versus Original Price](/images/scatter_sold_orig.png)
 
-![Correlation plot of numeric variables](https://github.com/chelseako/House_Pricing_Project/blob/main/housesCorrplot.png)
+![Correlation plot of numeric variables](/images/housesCorrplot.png)
 
 ## Model Building
 I split the data into training and testing sets with a test size of 20%.
