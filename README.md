@@ -1,18 +1,18 @@
-![Profile picture](/images/ko2.png) 
+![Profile picture](/images/house.png) 
 
-# Honolulu Housing Price Prediction Project Overview
+# Project Overview
 * Created a model that estimates sold prices for Honolulu houses (RMSE ~ $87,000) to help home buyers estimate a competitive bid offer.
 * Custom built a web scraper using Python and Selenium for a local real estate website.
 * Used only predictor variables that can be identified at time of listing.
 * Cleaned 700+ observations of Honolulu houses sold within the past year using Python (Pandas, Numpy) and R.
 * Optimized Linear, Ridge, Lasso, and Elastic Net Regressors to identify model with best predictive validity.
 
-## Code and Resources Used
+# Code and Resources Used
 **Packages:** pandas, numpy, selenium, re, datetime, csv, leaps, glmnet, corrplot
 
 **Scraper Github:** https://github.com/PlayingNumbers/ds_salary_proj/blob/master/glassdoor_scraper.py
 
-## Web Scraping
+# Web Scraping
 Created a scraper than scrapes listings from the similar listings page (maximum of 100 per page), then clicks on last listing to find new similar listings page. Scraper identifies if new listing was already collected, in the correct region, and sold within given parameter (e.g., last 12 months).
 
 The website allowed search parameters and displayed a table that could be downloaded directly as an Excel file. I used this excel file for time efficiency. To decrease variance and improve predictive validity, I used the following search parameters:
@@ -20,7 +20,7 @@ The website allowed search parameters and displayed a table that could be downlo
 * Minimum sold price = $800,000
 * Maximum sold price = $1,500,000
 
-## Data Cleaning
+# Data Cleaning
 Cleaned 747 rows and 68 columns:
 * Removed index/irrelevant columns
 * Examined outliers and manually corrected erroneously entered values, removed irrelevant outliers (e.g., land only)
@@ -30,14 +30,14 @@ Cleaned 747 rows and 68 columns:
 * Parsed number of parking stalls and filled missing values with the median value (2)
 * Parsed number of stories and filled missing values with the median value (2)
 
-## Exploratory Data Analysis
+# Exploratory Data Analysis
 Examined the relationships between the independent and dependent variables.
 
 ![Scatterplot of Sold versus Original Price](/images/scatter_sold_orig.png)
 
 ![Correlation plot of numeric variables](/images/housesCorrplot.png)
 
-## Model Building
+# Model Building
 I split the data into training and testing sets with a test size of 20%.
 I tried five different models:
 * **Ordinary Least Squares (OLS) Regression** - Baseline for the model
@@ -46,7 +46,7 @@ I tried five different models:
 * **Lasso** - To reduce dimensionality and improve predictive validity
 * **Elastic Net** - To examine the mix of Ridge and Lasso
 
-## Model Performance
+# Model Performance
 The OLS model built using the regsubsets automatic model selection function had the lowest root mean squared error (RMSE) on the test set. The regsubsets function, using the "adjr2", "Cp", and "bic" scales, consistently selected the following four variables:
 * Original Price
 * Flood Zone
@@ -59,7 +59,6 @@ The RMSEs for each model are as follows:
 * **Lasso:** 92,717
 * **Elastic Net:** 93,585
 
-### [Link to Project GitHub Repository](https://github.com/chelseako/House_Pricing_Project)
+## [Link to Project GitHub Repository](https://github.com/chelseako/House_Pricing_Project)
 
-### [Back to Chelsea Ko's Portfolio](https://chelseako.github.io/Portfolio/)
-
+## [Back to Chelsea Ko's Portfolio](https://chelseako.github.io/Portfolio/)
